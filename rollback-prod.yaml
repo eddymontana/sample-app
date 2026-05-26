@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: production-deployment
   labels:
-    app: hello-prod
+    app: hello
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-prod
+      app: hello
   template:
     metadata:
       labels:
-        app: hello-prod
+        app: hello
     spec:
       containers:
       - name: sample-app
