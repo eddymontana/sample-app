@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: production-deployment
   labels:
-    app: hello-prod
+    app: production-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-prod
+      app: production-deployment
   template:
     metadata:
       labels:
-        app: hello-prod
+        app: production-deployment
     spec:
       containers:
-      - name: sample-app
+      - name: production-deployment
         image: europe-west1-docker.pkg.dev/qwiklabs-gcp-04-4d4689b9163b/my-repository/sample-app-prod:v1.0
         ports:
         - containerPort: 8080
