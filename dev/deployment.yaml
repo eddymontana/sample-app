@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: development-deployment
-        image: europe-west1-docker.pkg.dev/qwiklabs-gcp-02-e64e7551736f/my-repository/sample-app-dev:v2.0
+        image: europe-west1-docker.pkg.dev/qwiklabs-gcp-02-e64e7551736f/my-repository/sample-app-dev:v1.0
         ports:
         - containerPort: 8080
